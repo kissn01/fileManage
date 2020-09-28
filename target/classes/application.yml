@@ -1,0 +1,18 @@
+server:
+  port: 20001
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML5
+    encoding: utf-8
+    cache: false
+  mvc:
+#    static-path-pattern: /static/**    #静态资源的请求方式
+#  resources:
+#      static-locations: classpath:/static/  # 静态资源的配置位置，可以写成一个数组配置多个目录
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
